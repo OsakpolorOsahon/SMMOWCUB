@@ -3,84 +3,329 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMMOWCUB - Exclusive Portal</title>
+  <title>SMMOWCUB - Senior Members of Man O’ War Club, UNIBEN</title>
+  <meta name="description" content="Exclusive portal for UNIBEN Man O' War alumni. Connect with fellow Statesmen, access premium resources, and earn distinguished recognition.">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="SMMOWCUB - Exclusive Alumni Network">
+  <meta property="og:description" content="Senior Members portal for verified Man O' War Club graduates from University of Benin.">
+  <meta property="og:image" content="https://smmowcub.org/img/og-image.jpg">
+  <meta property="og:url" content="https://smmowcub.org">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SMMOWCUB - Senior Members Portal">
+  <meta name="twitter:description" content="Connect with UNIBEN Man O' War alumni and access exclusive resources.">
+  <meta name="twitter:image" content="https://smmowcub.org/img/og-image.jpg">
+  
+  <link rel="canonical" href="https://smmowcub.org">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Background Elements -->
-  <div class="bg-blur-1"></div>
-  <div class="bg-blur-2"></div>
+  <!-- Skip to Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   
-  <header class="header">
+  <!-- Header with semantic roles -->
+  <header role="banner">
     <div class="container">
-      <div class="logo">
-        <img src="img/logo.png" alt="SMMOWCUB Logo">
+      <div class="header-content">
+        <div class="logo">
+          <img src="img/logo.png" alt="SMMOWCUB - Senior Members of the Man O' War Club, University of Benin">
+          <h1>SMMOWCUB</h1>
+        </div>
+        
+        <nav role="navigation">
+          <ul>
+            <li><a href="#" class="active" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#directory">Directory</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#news">News & Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <a href="#" class="btn btn-login">Member Login</a>
+          <div class="theme-toggle" id="themeToggle" role="button" aria-label="Toggle dark mode" tabindex="0">
+            <span class="light-icon">☀️</span>
+            <span class="toggle-handle"></span>
+            <span class="dark-icon">🌙</span>
+          </div>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon" aria-hidden="true">✕</span>
+          </button>
+        </div>
       </div>
-      <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="nav">
-        <a href="/"><i class="fas fa-home"></i> Home</a>
-        <a href="about.html"><i class="fas fa-landmark"></i> History</a>
-        <a href="directory.html"><i class="fas fa-users"></i> Directory</a>
-        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
-        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-        <a href="login.html" class="btn-login"><i class="fas fa-lock"></i> Member Login</a>
-      </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Legacy of <span>Leadership</span></h1>
-        <p class="subtitle">Exclusive Portal for Senior Members of UNIBEN's Man O' War Club</p>
-        <div class="cta-buttons">
-          <a href="directory.html" class="btn">
-            <i class="fas fa-users"></i> Explore Directory
-          </a>
-          <a href="login.html" class="btn-outline">
-            <i class="fas fa-star"></i> Member Access
-          </a>
+  <!-- Main Content Area -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Bringing Together the <span>Legacy and Leadership</span></h2>
+          <p>A secure portal for our Statesmen to connect, learn, and be recognized. SMMOWCUB is an exclusive alumni network for graduates who served in the Man O' War Club at UNIBEN.</p>
+          <div class="hero-btns">
+            <a href="#directory" class="btn btn-primary">View Statesmen Directory</a>
+            <a href="#benefits" class="btn btn-outline">Learn About Benefits</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="features">
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About SMMOWCUB</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>SMMOWCUB ("Senior Members of the Man O' War Club, University of Benin") is a brotherhood of alumni who once served with distinction in UNIBEN's storied Man O' War Club. Founded on principles of discipline, service, and leadership, our mission is to keep those bonds alive—fostering mentorship, professional growth, and community impact long after graduation.</p>
+            <p>We are an exclusive alumni network open only to graduates who served in the Man O' War Club at UNIBEN. The website has two distinct audiences: Public Visitors and Statesmen (Members).</p>
+            <p>After Secretary approval, members gain access to our secure members-only section: Empowerment Hub, Job Board, Mentorship Program, Discussion Forums, Interactive Map, Badge Recognition, and Hall of Fame.</p>
+          </div>
+          <div class="about-image">
+            <img src="img/about-image.jpg" alt="UNIBEN Man O' War Club members during a training exercise">
+            <div class="history-highlight">
+              <h4>Since 1975</h4>
+              <p>Over 45 years of tradition and excellence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 id="benefits-heading" class="section-title">Member Benefits</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">🔒</div>
+            <h3>Exclusive Membership</h3>
+            <p>A community of graduates who upheld discipline, service, and leadership at UNIBEN's Man O' War Club.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">📚</div>
+            <h3>Empowerment & Resources</h3>
+            <p>Access guides, training videos, and job opportunities tailored for Statesmen's advancement.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">🏆</div>
+            <h3>Recognition & Impact</h3>
+            <p>Earn distinguished badges and see your contributions highlighted in our Hall of Fame.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directory Preview -->
+    <section id="directory" class="directory" aria-labelledby="directory-heading">
+      <div class="container">
+        <h2 id="directory-heading" class="section-title">Statesmen Directory</h2>
+        <div class="directory-description">
+          <p>Meet the distinguished men and women who once wore the Man O' War uniform. This directory lists every approved Statesman—sorted by current office, service session, and final club role.</p>
+        </div>
+        <div class="directory-cards">
+          <div class="member-card">
+            <div class="member-badge">Community Pillar</div>
+            <img src="img/member1.jpg" alt="Jane Doe - Statesman Adjutant General" class="member-photo" loading="lazy">
+            <div class="member-info">
+              <h3>Jane Doe</h3>
+              <p>Statesman Adjutant General 2019/2020</p>
+              <div class="member-stats">
+                <div class="stat">
+                  <span>15</span>
+                  <small>Years</small>
+                </div>
+                <div class="stat">
+                  <span>3</span>
+                  <small>Badges</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="member-card">
+            <div class="member-badge">Legacy Leader</div>
+            <img src="img/member2.jpg" alt="John Smith - Statesman" class="member-photo" loading="lazy">
+            <div class="member-info">
+              <h3>John Smith</h3>
+              <p>Statesman 2018/2019</p>
+              <div class="member-stats">
+                <div class="stat">
+                  <span>12</span>
+                  <small>Years</small>
+                </div>
+                <div class="stat">
+                  <span>2</span>
+                  <small>Badges</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="member-card">
+            <div class="member-badge">Society Beacon</div>
+            <img src="img/member3.jpg" alt="Chinwe Okonkwo - Statesman Provost Marshal" class="member-photo" loading="lazy">
+            <div class="member-info">
+              <h3>Chinwe Okonkwo</h3>
+              <p>Statesman Provost Marshal 2020/2021</p>
+              <div class="member-stats">
+                <div class="stat">
+                  <span>8</span>
+                  <small>Years</small>
+                </div>
+                <div class="stat">
+                  <span>4</span>
+                  <small>Badges</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="directory-cta">
+          <a href="#" class="btn btn-primary">Explore Full Directory</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Events -->
+    <section id="news" class="news-events" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="news-heading" class="section-title">News & Events</h2>
+          <a href="#" class="btn btn-outline">View All</a>
+        </div>
+        
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-date">
+              <span class="day">15</span>
+              <span class="month">JUN</span>
+            </div>
+            <div class="news-content">
+              <h3>Annual Leadership Conference</h3>
+              <p>Join us for the 2025 Leadership Conference where we'll discuss strategies for community development and alumni engagement.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-date">
+              <span class="day">25</span>
+              <span class="month">JUL</span>
+            </div>
+            <div class="news-content">
+              <h3>Alumni Networking Mixer</h3>
+              <p>An exclusive event for Statesmen to connect and network in Lagos. Open to all verified members.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-date">
+              <span class="day">12</span>
+              <span class="month">AUG</span>
+            </div>
+            <div class="news-content">
+              <h3>Career Development Workshop</h3>
+              <p>Online workshop focused on career advancement strategies for Statesmen at all career stages.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership CTA -->
+    <section class="membership-cta" aria-label="Membership Call to Action">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Exclusive Community?</h2>
+          <p>Apply now to become a verified Statesman and access all member benefits.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Apply for Membership</a>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with semantic role -->
+  <footer id="contact" role="contentinfo">
     <div class="container">
-      <h2 class="section-title">Exclusive Member Benefits</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="card-icon">
-            <i class="fas fa-user-shield"></i>
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="SMMOWCUB Logo">
+            <h3>SMMOWCUB</h3>
           </div>
-          <h3>Verified Community</h3>
-          <p>Restricted to verified UNIBEN Man O' War alumni with Secretary approval</p>
+          <p>Senior Members of the Man O' War Club, University of Benin is an exclusive alumni network for graduates who served with distinction in UNIBEN's storied Man O' War Club.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+            <a href="#" aria-label="Twitter"><span aria-hidden="true">t</span></a>
+            <a href="#" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+            <a href="#" aria-label="Instagram"><span aria-hidden="true">ig</span></a>
+          </div>
         </div>
         
-        <div class="feature-card">
-          <div class="card-icon">
-            <i class="fas fa-gem"></i>
-          </div>
-          <h3>Luxury Recognition</h3>
-          <p>Prestigious badges honoring exceptional leadership and contributions</p>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#directory">Directory</a></li>
+            <li><a href="#benefits">Member Benefits</a></li>
+            <li><a href="#news">News & Events</a></li>
+            <li><a href="#">Member Login</a></li>
+          </ul>
         </div>
         
-        <div class="feature-card">
-          <div class="card-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <h3>Elite Networking</h3>
-          <p>Connect with distinguished Statesmen through our secure portal</p>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Empowerment Hub</a></li>
+            <li><a href="#">Job Board</a></li>
+            <li><a href="#">Mentorship Program</a></li>
+            <li><a href="#">Discussion Forums</a></li>
+            <li><a href="#">Interactive Map</a></li>
+            <li><a href="#">Hall of Fame</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><span aria-hidden="true">📍</span> University of Benin, Ugbowo Campus, Benin City</li>
+            <li><span aria-hidden="true">✉️</span> secretary@smmowcub.org</li>
+            <li><span aria-hidden="true">📱</span> +234 812 345 6789</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> SMMOWCUB. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
         </div>
       </div>
     </div>
-  </section>
+  </footer>
+
+  <noscript>
+    <div class="noscript-warning">
+      <p>This website works best with JavaScript enabled. Some features may not be available without it.</p>
+    </div>
+  </noscript>
 
   <script src="js/main.js"></script>
 </body>
