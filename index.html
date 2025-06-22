@@ -2,53 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sticky Note</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://www.transparenttextures.com/patterns/cork-board.png');
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-    }
-
-    .note {
-      width: 200px;
-      height: 200px;
-      background: #fffc7f;
-      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-      transform: rotate(-3deg);
-      padding: 20px;
-      margin: 100px auto;
-      border: 1px solid #e1d700;
-      position: relative;
-    }
-
-    .note::before {
-      content: '';
-      width: 20px;
-      height: 20px;
-      background: red;
-      border-radius: 50%;
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .note h3 {
-      margin: 0;
-    }
-
-    .note p {
-      font-size: 14px;
-      margin-top: 10px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMMOWCUB - Exclusive Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="note">
-    <h3>Don’t Forget!</h3>
-    <p>Push your code to GitHub!<br>And drink water 💧</p>
-  </div>
+  <!-- Background Elements -->
+  <div class="bg-blur-1"></div>
+  <div class="bg-blur-2"></div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="img/logo.png" alt="SMMOWCUB Logo">
+      </div>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav">
+        <a href="/"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-landmark"></i> History</a>
+        <a href="directory.html"><i class="fas fa-users"></i> Directory</a>
+        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="login.html" class="btn-login"><i class="fas fa-lock"></i> Member Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Legacy of <span>Leadership</span></h1>
+        <p class="subtitle">Exclusive Portal for Senior Members of UNIBEN's Man O' War Club</p>
+        <div class="cta-buttons">
+          <a href="directory.html" class="btn">
+            <i class="fas fa-users"></i> Explore Directory
+          </a>
+          <a href="login.html" class="btn-outline">
+            <i class="fas fa-star"></i> Member Access
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Exclusive Member Benefits</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3>Verified Community</h3>
+          <p>Restricted to verified UNIBEN Man O' War alumni with Secretary approval</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Luxury Recognition</h3>
+          <p>Prestigious badges honoring exceptional leadership and contributions</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="card-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Elite Networking</h3>
+          <p>Connect with distinguished Statesmen through our secure portal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
