@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Note</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://www.transparenttextures.com/patterns/cork-board.png');
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .note {
+      width: 200px;
+      height: 200px;
+      background: #fffc7f;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      transform: rotate(-3deg);
+      padding: 20px;
+      margin: 100px auto;
+      border: 1px solid #e1d700;
+      position: relative;
+    }
+
+    .note::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .note h3 {
+      margin: 0;
+    }
+
+    .note p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="note">
+    <h3>Don’t Forget!</h3>
+    <p>Push your code to GitHub!<br>And drink water 💧</p>
+  </div>
+</body>
+</html>
